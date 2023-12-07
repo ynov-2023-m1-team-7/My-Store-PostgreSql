@@ -6,8 +6,9 @@ CREATE DATABASE m1_mystore_archi_log;
 CREATE TABLE IF NOT EXISTS "Product" (
     "id" SERIAL PRIMARY KEY NOT NULL,
     "name" TEXT NOT NULL,
-    "description" TEXT,
+    "description" TEXT NOT NULL,
     "active" BOOLEAN NOT NULL DEFAULT FALSE,
+    "packshot" TEXT NOT NULL,
     "thumbnail" TEXT NOT NULL,
     "price" INTEGER NOT NULL
 );
