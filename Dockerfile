@@ -6,8 +6,6 @@ COPY ./scripts /docker-entrypoint-initdb.d/
 
 
 # Set the environment variables:
-ENV POSTGRES_DB ${POSTGRES_DB}
-ENV POSTGRES_USER ${POSTGRES_USER}
 ENV POSTGRES_PASSWORD ${POSTGRES_PASSWORD}
 
 # Grant permissions for the initialization scripts:
