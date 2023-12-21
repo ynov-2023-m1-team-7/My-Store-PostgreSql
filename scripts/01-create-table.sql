@@ -13,3 +13,11 @@ CREATE TABLE IF NOT EXISTS "product" (
     "thumbnail" TEXT NOT NULL,
     "price" INTEGER NOT NULL
 );
+CREATE TABLE IF NOT EXISTS "form" (
+    "id" SERIAL PRIMARY KEY NOT NULL,
+    "firstname" TEXT NOT NULL,
+    "lastname" TEXT NOT NULL,
+    "email" TEXT NOT NULL,
+    "product_id" INTEGER NOT NULL,
+    "created_at" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
