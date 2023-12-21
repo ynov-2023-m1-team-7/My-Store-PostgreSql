@@ -15,9 +15,9 @@ CREATE TABLE IF NOT EXISTS "product" (
 );
 CREATE TABLE IF NOT EXISTS "form" (
     "id" SERIAL PRIMARY KEY NOT NULL,
-    "firstname" TEXT NOT NULL,
-    "lastname" TEXT NOT NULL,
+    "firstName" TEXT NOT NULL,
+    "lastName" TEXT NOT NULL,
     "email" TEXT NOT NULL,
-    "product_id" INTEGER NOT NULL,
+    "productId" INTEGER NOT NULL,
     "created_at" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
