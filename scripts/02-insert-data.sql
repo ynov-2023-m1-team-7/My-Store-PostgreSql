@@ -1,4 +1,4 @@
-INSERT INTO Product
+INSERT INTO "product"
 VALUES (
         1,
         'W simple pant',

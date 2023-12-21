@@ -4,7 +4,7 @@
 -- -- Database: m1_myapp_archi_log
 -- CREATE DATABASE IF NOT EXISTS postgres;
 -- \ c postgres;
-CREATE TABLE IF NOT EXISTS Product (
+CREATE TABLE IF NOT EXISTS "product" (
     "id" SERIAL PRIMARY KEY NOT NULL,
     "name" TEXT NOT NULL,
     "description" TEXT NOT NULL,
